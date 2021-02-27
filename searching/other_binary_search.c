@@ -11,10 +11,11 @@ int binarySearch(int array[], int leng, int searchX)
 
     while (left <= right)
     {
+        //to get the middle position of the array.
         pos = left + (right - left) / 2;
         if (array[pos] == searchX)
         {
-            return pos;
+            return pos;  //returns the index at which the number is found.
         }
         else if (array[pos] > searchX)
         {
